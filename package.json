@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "A platform where voices resonate, ideas amplify, and conversations flow. EchoHub is the place to share quick updates, spark engaging discussions, and stay connected with what matters most. Whether you're echoing thoughts, following trends, or creating your own sound waves, EchoHub lets you express yourself and stay in the loop effortlessly. Dive into a community that thrives on shared insights and celebrates individuality, one echo at a time.",
     "main": "index.js",
-	"type": "module",
+    "type": "module",
     "scripts": {
         "test": "node src/index.js",
         "start": "node src/index.js",
@@ -31,6 +31,7 @@
     },
     "homepage": "https://github.com/manab-debnath/echoHub#readme",
     "dependencies": {
+        "bcrypt": "^5.1.1",
         "cookie-parser": "^1.4.7",
         "cors": "^2.8.5",
         "dotenv": "^16.4.5",
