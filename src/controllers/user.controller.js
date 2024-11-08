@@ -72,8 +72,7 @@ const registerUser = asyncHandler(async (req, res) => {
         email,
         password,
         profileImage:
-            profileImage?.secure_url ||
-            path.resolve("./public/default/defaultProfileImage.png"),
+            profileImage?.secure_url
     });
 
     const createdUser = await User.findById(user._id).select(

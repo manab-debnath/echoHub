@@ -1,6 +1,7 @@
 import mongoose, { Schema, model } from "mongoose";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+import path from "path"
 
 const userSchema = new Schema(
     {
@@ -25,6 +26,7 @@ const userSchema = new Schema(
         },
         profileImage: {
             type: String,
+            default: path.resolve("./public/default/defaultProfileImage.png"),
         },
         follower_count: {
             type: Number,
